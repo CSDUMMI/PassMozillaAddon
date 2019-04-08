@@ -2,15 +2,22 @@
     "manifest_version":2,
     "name":"Pass",
     "version":"0.1",
-    "description":"A Version of the CommandlinePasswordManager as Firefox Addon",
 
+    "description":"A Version of the CommandlinePasswordManager as Firefox Addon",
+    "homepage_url":"https://github.com/csdummi/PassMozillaAddon",
+  
     "icons": {
         "48": "icons/Pass-48.png"
     },
 
-    "content_scripts": [
-        {
-            "js":["pass.js"]
-        }
+    "permissions": [
+        "activeTab"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/Pass-32.png",
+        "default_title": "Pass Manager",
+        "default_popup": "popup/index.html"
+    }
     
 }
