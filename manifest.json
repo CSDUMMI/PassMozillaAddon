@@ -1,0 +1,16 @@
+{
+    "manifest_version":2,
+    "name":"Pass",
+    "version":"0.1",
+    "description":"A Version of the CommandlinePasswordManager as Firefox Addon",
+
+    "icons": {
+        "48": "icons/Pass-48.png"
+    },
+
+    "content_scripts": [
+        {
+            "js":["pass.js"]
+        }
+    
+}
